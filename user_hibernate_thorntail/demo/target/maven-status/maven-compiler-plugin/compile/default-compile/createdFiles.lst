@@ -1,0 +1,9 @@
+com\example\demo\service\WorkerService.class
+com\example\demo\service\UserService.class
+com\example\demo\model\User.class
+com\example\demo\rest\WorkerResource.class
+com\example\demo\model\Address.class
+com\example\demo\model\Worker.class
+com\example\demo\rest\DbTestResource.class
+com\example\demo\rest\RestApplication.class
+com\example\demo\rest\UserResource.class
