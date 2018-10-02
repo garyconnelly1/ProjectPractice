@@ -1,0 +1,77 @@
+
+<h2>Hello</h2>
+
+<button type="button" class="btn btn-primary" (click)="postUser()">Post User</button>
+<button type="button" class="btn btn-primary" (click)="postWorker()">Post Worker</button>
+<button type="button" class="btn btn-primary" (click)="sayHello()">Update User</button>
+<button type="button" class="btn btn-primary" (click)="deleteUser()">Delete User</button>
+<span class="d-block p-2 bg-dark text-white"><h1>Users</h1></span>
+<div class = "panel panel-primary" *ngFor= "let user of users">
+    <div class = "panel-heading">
+      <h3 class = "panel-title">{{user.firstName}}</h3>
+     
+    </div>
+     <div class = "panel-body">
+        <h3> {{user.firstName}} </h3>
+         <h3> {{user.lastName}} </h3>
+      <h3> {{user.age}} </h3>
+      <h2>Address:</h2>
+        <h3> {{user.address.line1}} </h3>
+        <h3> {{user.address.line2}} </h3>
+        <h3> {{user.address.line3}} </h3>
+        <h3> {{user.address.city}} </h3>
+       </div>
+</div> 
+
+<span class="d-block p-2 bg-dark text-white"><h1>Workers</h1></span>
+<div class = "panel panel-primary" *ngFor= "let worker of workers">
+    <div class = "panel-heading">
+      <h3 class = "panel-title">{{worker.firstName}}</h3>
+     
+    </div>
+     <div class = "panel-body">
+        <h3> {{worker.firstName}} </h3>
+         <h3> {{worker.lastName}} </h3>
+      <h3> {{worker.age}} </h3>
+      <h3> {{worker.trade}} </h3>
+      <h3> {{worker.rating}} </h3>
+      <h2>Address:</h2>
+        <h3> {{worker.address.line1}} </h3>
+        <h3> {{worker.address.line2}} </h3>
+        <h3> {{worker.address.line3}} </h3>
+        <h3> {{worker.address.city}} </h3>
+       </div>
+</div> 
+<!--  Testing Bootstrap
+<nav class="navbar fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Eliza chat bot</a>
+    </nav>
+    
+
+    <div class="container">  
+    <div class="panel panel-default">
+        <div class="panel-heading"> SignUp to the system </div>
+        <div class="panel-body">
+            Test Panel
+        </div>
+        <div class="panel-footer"> You have 3 More attempts left! </div>
+    </div>
+</div>
+<div class = "container">
+  <div class = "jumbotron">
+    <h1>Welcome</h1>
+    <h2>Angular bootstrap demo</h2>
+  </div>
+
+  <div class = "panel panel-primary">
+    <div class = "panel-heading">
+      Status
+    </div>
+
+     <div class = "panel-body">
+       <h3>yo</h3>
+      </div>
+
+
+  </div>
+</div> -->
